@@ -1,7 +1,6 @@
 import './App.css';
 import LoaderHome from './components/Loader';
 import React from 'react';
-import Home from './components/Home';
 
 function App() {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -15,7 +14,6 @@ function App() {
   return (
     <div className="App">
       {isLoading ? <LoaderHome /> : null} {/* Conditionally show the loader */}
-      <Home/>
     </div>
   );
 }
